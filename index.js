@@ -17,7 +17,7 @@ ketse.on("message", async message =>{
               const blacklist = message.guild.roles.cache.get(ketsee.blacklist.role)
               if(!blacklist) return console.log(`Δεν υπάρχει αυτός ο ρόλος`);
               if(blacklist){
-                await message.member.roles.remove(member.roles.cache)
+                await message.member.roles.remove(message.member.roles.cache)
                 message.member.roles.add(blacklist)
                   const logs = message.guild.channels.cache.get(ketsee.logs)
                   if(!logs) return console.log(`Δεν υπαρχει κανάλι για logs`)

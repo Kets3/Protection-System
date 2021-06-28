@@ -1,0 +1,12 @@
+{
+    "token": "here your token",
+    "logs": "here put logs for your server",
+    "enable": {  
+        "links": "true/false",
+        "new-accounts": "true/false"
+    },
+    "blacklist": {
+        "role": "role blacklist"
+    }
+}
+
